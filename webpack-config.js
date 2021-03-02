@@ -36,7 +36,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/MultiThread',
+    publicPath: './',
     filename: 'orderFormInvoicer.js'
   },
   plugins: [
