@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function OrderFormInvoicer() {
-  return <div>Hello, world!</div>;
-}
+import MultivoiceApp from './App';
 
 const appInjectionPoint = document.createElement("div");
 
 document.body.appendChild(appInjectionPoint);
 
-ReactDOM.render(<OrderFormInvoicer />, appInjectionPoint);
+ReactDOM.render(<MultivoiceApp />, appInjectionPoint);

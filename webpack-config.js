@@ -31,7 +31,8 @@ module.exports = {
     alias: {
       '@assets': path.resolve(__dirname, 'public/'),
       '@src': path.resolve(__dirname, 'src/'),
-      '@hooks': path.resolve(__dirname, 'src/hooks/')
+      '@hooks': path.resolve(__dirname, 'src/hooks/'),
+      'react-dom': '@hot-loader/react-dom',
     }
   },
   output: {
@@ -44,7 +45,7 @@ module.exports = {
     new htmlWebpackPlugin({
       hash: true,
       filename: './index.html',
-      template: './src/index.ejs',
+      template: './src/index.html.ejs',
       // favicon: './public/favicon.ico'
     })
   ]

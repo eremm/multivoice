@@ -3,6 +3,7 @@ const path = require('path');
 
 module.exports = {
   ...webpackConfig,
+  entry: ['react-hot-loader/patch', './src/index.js'],
   output: {
     path: path.resolve(__dirname, '/'),
     publicPath: '/',
